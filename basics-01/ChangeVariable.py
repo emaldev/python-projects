@@ -1,7 +1,7 @@
 # this is a class for change (String , float , integer , boolean ) 
 #        varaible together .
 
-name = "Emal"
+name = "12.45"
 age = 20
 gpa = 3.45
 is_student = True
@@ -25,6 +25,27 @@ gpa = int(gpa)
 print(gpa)
 print(type(gpa))#this is type of after to change
 #====================================================
+# float to string
+gpa = str(gpa)
+print(gpa)
+print(type(gpa))
+#====================================================
+#integer to boolean
+age = bool(age)
+print(age)
+print(type(age))
+#====================================================
+#change boolean to integer
+is_student = int(is_student)
+print(is_student)
+print(type(is_student))
+#====================================================
+# change string to float 
+name = float(name)
+print(name)
+print(type(name))
+#====================================================
+
 
 
 
