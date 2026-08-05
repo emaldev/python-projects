@@ -1,15 +1,27 @@
-#This is a smal shop mabnagment for me 
+# This is a small school system for grading Student
+#  I hava a big program in java this school system
 
-name_product = input("Enter name of product:")
-price = float(input("Enter pirce of product:"))
-quantity = int(input("Enter quantity of product:"))
+name = input("Enter student name :")
+math = float(input("Enter Math score :"))
+english = float(input("Enter English score :"))
+programming = float(input("Enter Promgramming score :"))
 
-total_sell = price * quantity
-discount = total_sell * 0.10
+average = (math + english + programming) / 3
+result = average
+print(average)
+print(f"Name: {name}")
+print(f"Math: {math}")
+print(f"English: {english}")
 
-if total_sell > 100:
-    total_sell -= discount
-    print(total_sell)
+
+
+if result >= 90:
+    print(f"Excellent : {average}")
+elif result >= 70:
+    print(f"Good : {average}")
+elif result >= 50:
+    print(f"Passed : {average}")
 else:
-    print("You don't have discount")
-    print(total_sell)
+    print(f"Failed : {average}")
+
+
