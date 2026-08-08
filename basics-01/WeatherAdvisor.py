@@ -1,16 +1,12 @@
+#Password security checher
 
+password = input('Enter your password: ')
 
-
-temp = 20
-sunny = True
-
-
-if temp <= 0 or temp >= 30:
-    print('The temperature is bad')
+if len(password) == 0:
+    print('Password cannot be empty!')
+elif '123' in password or password.isdigit():
+    print('Very weak password~')
+elif len(password) >= 8 and " " not in password:
+    print('Strong password!')
 else:
-    print('The temperature is good')
-
-if not sunny:
-    print('It is sunny outside')
-else:
-    print('It is cloudy outside')
+    print('Weak password!')
