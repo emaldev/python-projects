@@ -1,13 +1,16 @@
 
 
-temperature = float(input('Enter teperature to day:'))
 
-if temperature >= 0 and temperature <= 30:
-    print('Perfect weather for a picnic!')
-elif temperature < 10:
-    print('Better stay at home.')
+temp = 20
+sunny = True
 
+
+if temp <= 0 or temp >= 30:
+    print('The temperature is bad')
 else:
-    print('Hava a nice day!')
+    print('The temperature is good')
 
-print("Don't forget your jacket.")
+if not sunny:
+    print('It is sunny outside')
+else:
+    print('It is cloudy outside')
